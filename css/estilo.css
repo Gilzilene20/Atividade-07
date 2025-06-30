@@ -1,0 +1,97 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #eef3fb;
+  color: #222;
+  text-align: center;
+  padding: 0 6px; /* espaço igual à borda lateral */
+}
+
+/* Bordas laterais fixas */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+body::before {
+  left: 0;
+}
+
+body::after {
+  right: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #4285f4;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 14px;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 30px 0;
+}
+
+/* Cada destaque */
+section {
+  background-color: white;
+  border: 20px solid #ffffff;
+  width: 540px;
+  margin: 0 auto 30px auto;
+  padding-bottom: 10px;
+  box-shadow: 0 1px 2px #c90b0b1a;
+}
+
+section img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+section h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 12px 0 4px;
+}
+
+section p {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+section a {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+/* Rodapé */
+footer {
+  font-size: 13px;
+  color: #777;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
